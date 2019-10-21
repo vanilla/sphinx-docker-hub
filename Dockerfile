@@ -14,7 +14,7 @@ COPY ./root/* /root/
 COPY ./usr/local/etc/sphinx.conf /usr/local/etc/sphinx.conf
 COPY ./usr/local/etc/sphinx/searchd.conf /usr/local/etc/sphinx/searchd.conf
 COPY ./usr/local/etc/sphinx/data/stops.txt /usr/local/etc/sphinx/data/stops.txt
-COPY ./usr/local/etc/sphinx/conf.d/sphinx.forum.conf /usr/local/etc/sphinx/conf.d/sphinx.conf
+COPY ./usr/local/etc/sphinx/conf.d/vanilla.conf /usr/local/etc/sphinx/conf.d/sphinx.conf
 
 RUN chmod +x /root/startup.sh \
  && chmod +x /root/listen.9399.sh
