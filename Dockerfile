@@ -1,6 +1,6 @@
 FROM vanillaryan/sphinxsearch
 
-RUN yum install epel-release mysql mysql-devel python3 socat -y
+RUN yum install epel-release mysql mysql-devel python3 socat -y \
   && mkdir -p /usr/local/etc/sphinx \
   && mkdir -p /usr/local/etc/sphinx/conf.d \
   && mkdir -p /usr/local/etc/sphinx/data
