@@ -5,7 +5,7 @@ sed -i 's/{MYSQL_PASSWORD}/'"$MYSQL_PASSWORD"'/g' /usr/local/etc/sphinx/conf.d/s
 sed -i 's/{MYSQL_HOST}/'"$MYSQL_HOST"'/g' /usr/local/etc/sphinx/conf.d/sphinx.conf
 sed -i 's/{MYSQL_DATABASE}/'"$MYSQL_DATABASE"'/g' /usr/local/etc/sphinx/conf.d/sphinx.conf
 
-until mysql -h"$MYSQL_HOST" -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" -e"quit"; do
+until mysql -h"$MYSQL_HOST" -u"root" -e"quit"; do
   sleep 1
 done
 
