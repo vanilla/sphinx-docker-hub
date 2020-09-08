@@ -1,3 +1,4 @@
+# Last updated 2020-03-11
 FROM vanillaryan/sphinxsearch
 
 RUN yum install epel-release mysql mysql-devel python3 socat -y \
